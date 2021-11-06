@@ -1,0 +1,36 @@
+SymbolTable: a
+ID   Name                IsGlobal IsExtern Offset   Section  HasValue 
+0    e3                  1        1        0        UND      0        
+1    e1                  1        1        0        UND      0        
+2    e2                  1        1        0        UND      0        
+3    sym1                1        0        0        data     1        
+4    sym2                1        0        0        ABS      0        
+5    sym3                1        0        0        ABS      0        
+6    data                0        0        0        data     0        
+7    symb4               0        0        5        ABS      1        
+8    labela1             0        0        0        data     1        
+9    text                0        0        0        text     0        
+Sections: 4
+Section: UND
+Offset: 0
+LocCnt: 0
+RelTable: 0
+Data: 0
+Section: ABS
+Offset: 0
+LocCnt: 0
+RelTable: 0
+Data: 0
+Section: data
+Offset: 0
+LocCnt: b
+RelTable: 0
+Data: b
+00000000: 00 30 f0 00 ff 00 b0 06 
+00000008: 12 80 11 
+Section: text
+Offset: 0
+LocCnt: 3
+RelTable: 0
+Data: 3
+00000000: a0 12 01 

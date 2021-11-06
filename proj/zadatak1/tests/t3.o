@@ -1,0 +1,38 @@
+SymbolTable: 6
+ID   Name                IsGlobal IsExtern Offset   Section  HasValue 
+0    myStart             1        0        0        myCode   1        
+1    myCounter           1        0        0        myData   1        
+2    myCode              0        0        0        myCode   0        
+3    tim_cfg             0        0        ff10     ABS      1        
+4    wait                0        0        a        myCode   1        
+5    myData              0        0        0        myData   0        
+Sections: 4
+Section: UND
+Offset: 0
+LocCnt: 0
+RelTable: 0
+Data: 0
+Section: ABS
+Offset: 0
+LocCnt: 0
+RelTable: 0
+Data: 0
+Section: myCode
+Offset: 0
+LocCnt: 1c
+RelTable: 3
+Offset   Type     Symb     Addend   
+8        1        3        0        
+d        1        1        0        
+19       1        4        0        
+Data: 1c
+00000000: a0 00 00 00 01 b0 00 04 
+00000008: 00 00 a0 00 04 00 00 a0 
+00000010: 10 00 00 05 74 01 52 f0 
+00000018: 00 00 00 00 
+Section: myData
+Offset: 0
+LocCnt: 2
+RelTable: 0
+Data: 2
+00000000: 00 00 

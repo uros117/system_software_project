@@ -1,0 +1,78 @@
+SymbolTable: e
+ID   Name                IsGlobal IsExtern Offset   Section  HasValue 
+0    ivt                 0        0        0        ivt      0        
+1    myStart             1        1        0        myCode   1        
+2    myCounter           1        1        0        myData   1        
+3    isr                 0        0        0        isr      0        
+4    term_out            0        0        ff00     ABS      1        
+5    term_in             0        0        ff02     ABS      1        
+6    asciiCode           0        0        54       ABS      1        
+7    isr_reset           0        0        0        isr      1        
+8    isr_timer           0        0        5        isr      1        
+9    isr_terminal        0        0        16       isr      1        
+a    myCode              0        0        0        myCode   0        
+b    tim_cfg             0        0        ff10     ABS      1        
+c    wait                0        0        a        myCode   1        
+d    myData              0        0        0        myData   0        
+Sections: 6
+Section: UND
+Offset: 0
+LocCnt: 0
+RelTable: 0
+Data: 0
+Section: ABS
+Offset: 0
+LocCnt: 0
+RelTable: 0
+Data: 0
+Section: ivt
+Offset: 0
+LocCnt: 10
+RelTable: 3
+Offset   Type     Symb_name           Addend   
+0        3        7                   0        
+4        3        8                   0        
+6        3        9                   0        
+Data: 10
+00000000: 00 00 00 00 00 05 00 16 
+00000008: 00 00 00 00 00 00 00 00 
+Section: isr
+Offset: 0
+LocCnt: 3e
+RelTable: 7
+Offset   Type     Symb_name           Addend   
+3        1        1                   0        
+b        3        6                   0        
+10       1        4                   0        
+1f       1        5                   0        
+24       1        4                   0        
+29       4        2                   5        
+35       1        2                   0        
+Data: 3e
+00000000: 50 f0 00 00 00 b0 06 12 
+00000008: a0 00 00 00 00 b0 00 04 
+00000010: 00 00 a0 06 42 20 b0 06 
+00000018: 12 b0 16 12 a0 00 04 00 
+00000020: 00 b0 00 04 00 00 a0 07 
+00000028: 03 00 00 a0 10 00 00 01 
+00000030: 70 01 b0 00 04 00 00 a0 
+00000038: 16 42 a0 06 42 20 
+Section: myCode
+Offset: 0
+LocCnt: 1c
+RelTable: 3
+Offset   Type     Symb_name           Addend   
+8        1        b                   0        
+d        1        2                   0        
+19       1        c                   0        
+Data: 1c
+00000000: a0 00 00 00 01 b0 00 04 
+00000008: 00 00 a0 00 04 00 00 a0 
+00000010: 10 00 00 05 74 01 52 f0 
+00000018: 00 00 00 00 
+Section: myData
+Offset: 0
+LocCnt: 2
+RelTable: 0
+Data: 2
+00000000: 00 00 

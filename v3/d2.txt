@@ -1,0 +1,40 @@
+
+convetion_part2.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	f3 0f 1e fa          	endbr64 
+   4:	55                   	push   rbp
+   5:	48 89 e5             	mov    rbp,rsp
+   8:	48 83 ec 10          	sub    rsp,0x10
+   c:	c6 45 f4 61          	mov    BYTE PTR [rbp-0xc],0x61
+  10:	c7 45 f8 02 00 00 00 	mov    DWORD PTR [rbp-0x8],0x2
+  17:	66 c7 45 fc 03 00    	mov    WORD PTR [rbp-0x4],0x3
+  1d:	48 8b 45 f4          	mov    rax,QWORD PTR [rbp-0xc]
+  21:	8b 4d fc             	mov    ecx,DWORD PTR [rbp-0x4]
+  24:	48 89 ca             	mov    rdx,rcx
+  27:	48 83 ec 10          	sub    rsp,0x10
+  2b:	48 89 e1             	mov    rcx,rsp
+  2e:	48 8b 75 f4          	mov    rsi,QWORD PTR [rbp-0xc]
+  32:	48 89 31             	mov    QWORD PTR [rcx],rsi
+  35:	8b 75 fc             	mov    esi,DWORD PTR [rbp-0x4]
+  38:	89 71 08             	mov    DWORD PTR [rcx+0x8],esi
+  3b:	41 b9 06 00 00 00    	mov    r9d,0x6
+  41:	41 b8 04 00 00 00    	mov    r8d,0x4
+  47:	48 89 d1             	mov    rcx,rdx
+  4a:	48 89 c2             	mov    rdx,rax
+  4d:	be 02 00 00 00       	mov    esi,0x2
+  52:	bf 61 00 00 00       	mov    edi,0x61
+  57:	e8 00 00 00 00       	call   5c <main+0x5c>
+  5c:	48 83 c4 10          	add    rsp,0x10
+  60:	89 45 f0             	mov    DWORD PTR [rbp-0x10],eax
+  63:	8b 45 f0             	mov    eax,DWORD PTR [rbp-0x10]
+  66:	89 c6                	mov    esi,eax
+  68:	48 8d 3d 00 00 00 00 	lea    rdi,[rip+0x0]        # 6f <main+0x6f>
+  6f:	b8 00 00 00 00       	mov    eax,0x0
+  74:	e8 00 00 00 00       	call   79 <main+0x79>
+  79:	b8 00 00 00 00       	mov    eax,0x0
+  7e:	c9                   	leave  
+  7f:	c3                   	ret    
